@@ -1,0 +1,21 @@
+.header__nav-container nav {
+  display: grid;
+  background-color: var(--gryzzl-sky);
+}
+
+.nav__link-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
+  padding: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  justify-self: end;
+}
+
+.nav__link a {
+  color: var(--gryzzl-berry);
+  text-decoration: none;
+}

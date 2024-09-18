@@ -1,0 +1,32 @@
+:root {
+  --gryzzl-royal: hsl(215, 44%, 36%);
+  --gryzzl-sky: hsl(219, 98%, 79%);
+  --gryzzl-berry: hsl(335, 83%, 56%);
+  --gryzzl-camel: hsl(48, 17%, 53%);
+  --gryzzl-orchid: hsl(298, 68%, 69%);
+  --gryzzl-deep-orchid: hsl(301, 51%, 44%);
+}
+
+.header__nav-container nav {
+  display: grid;
+  background-color: var(--gryzzl-sky);
+}
+
+.nav__link-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  list-style: none;
+  padding: 12px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  justify-self: end;
+}
+
+.nav__link a {
+  color: var(--gryzzl-berry);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
