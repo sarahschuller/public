@@ -14,14 +14,14 @@
                     <li class="nav__link"><a href="<?php echo site_url('/about') ?>">About</a></li>
                     <li class="nav__link"><a href="#">Pages</a>
                         <ul class="dropdown">
-                            <li><a href="#">
-                                    Sub Test 1
+                            <li><a href="<?php echo site_url('/partials') ?>">
+                                    Partials
                                 </a></li>
-                            <li><a href="#">
-                                    Sub Test 2
+                            <li><a href="<?php echo site_url('/blocks') ?>">
+                                    Blocks
                                 </a></li>
-                            <li><a href="#">
-                                    Sub Test 3
+                            <li><a href="<?php echo site_url('/miscellaneous') ?>">
+                                    Miscellaneous
                                 </a></li>
                         </ul>
                     </li>
