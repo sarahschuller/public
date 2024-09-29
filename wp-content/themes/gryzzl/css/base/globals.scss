@@ -89,6 +89,11 @@ button {
   }
 }
 
+.single-page {
+  margin-top: 48px;
+  padding: 24px;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(-100%);
