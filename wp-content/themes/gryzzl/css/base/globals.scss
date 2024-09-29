@@ -1,8 +1,61 @@
 :root {
-  --gryzzl-royal: hsl(215, 44%, 36%);
-  --gryzzl-sky: hsl(219, 98%, 79%);
-  --gryzzl-berry: hsl(335, 83%, 56%);
-  --gryzzl-camel: hsl(48, 17%, 53%);
-  --gryzzl-orchid: hsl(298, 68%, 69%);
-  --gryzzl-deep-orchid: hsl(301, 51%, 44%);
+  --gryzzl-primary-beige: hsl(0, 10%, 66%);
+  --gryzzl-primary-dove: hsl(242, 19%, 63%);
+  --gryzzl-primary-mint: hsl(135, 100%, 90%);
+  --gryzzl-primary-cream: hsl(0, 12%, 93%);
+  --gryzzl-primary-cream-alt: hsl(0, 10%, 86%);
+  --gryzzl-primary-milk-choc: hsl(0, 5%, 33%);
+  --gryzzl-primary-dk-choc: hsl(0, 6%, 17%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--gryzzl-primary-beige);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--gryzzl-primary-dove);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gryzzl-primary-dk-choc);
+  font-weight: 600;
+  position: relative;
+
+  &:hover {
+    color: var(--gryzzl-primary-dove);
+    transition: 500ms ease;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: var(--gryzzl-primary-beige);
+      transition: 500ms ease;
+      animation: slide 300ms;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
