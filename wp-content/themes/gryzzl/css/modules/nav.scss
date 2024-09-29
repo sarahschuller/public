@@ -19,6 +19,7 @@
   color: var(--gryzzl-primary-milk-choc);
   text-decoration: none;
   text-transform: uppercase;
+  z-index: 1;
 
   &:hover {
     color: var(--gryzzl-primary-dove);
@@ -33,6 +34,9 @@
   display: none;
   list-style-type: none;
   padding-block: 8px;
+  background-color: var(--gryzzl-primary-cream);
+  padding-inline: 4px;
+  z-index: 0;
 }
 
 ul li:hover > ul,
