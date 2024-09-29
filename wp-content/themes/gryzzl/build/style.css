@@ -1,12 +1,62 @@
 :root {
-  --gryzzl-royal: hsl(215, 44%, 36%);
-  --gryzzl-sky: hsl(219, 98%, 79%);
-  --gryzzl-berry: hsl(335, 83%, 56%);
-  --gryzzl-camel: hsl(48, 17%, 53%);
-  --gryzzl-orchid: hsl(298, 68%, 69%);
-  --gryzzl-deep-orchid: hsl(301, 51%, 44%);
+  --gryzzl-primary-beige: hsl(0, 10%, 66%);
+  --gryzzl-primary-dove: hsl(242, 19%, 63%);
+  --gryzzl-primary-mint: hsl(135, 100%, 90%);
+  --gryzzl-primary-cream: hsl(0, 12%, 93%);
+  --gryzzl-primary-cream-alt: hsl(0, 10%, 86%);
+  --gryzzl-primary-milk-choc: hsl(0, 5%, 33%);
+  --gryzzl-primary-dk-choc: hsl(0, 6%, 17%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--gryzzl-primary-beige);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: var(--gryzzl-primary-dove);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: var(--gryzzl-primary-dk-choc);
+  font-weight: 600;
+  position: relative;
+}
+a:hover {
+  color: var(--gryzzl-primary-dove);
+  transition: 500ms ease;
+}
+a:hover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--gryzzl-primary-beige);
+  transition: 500ms ease;
+  animation: slide 300ms;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .header__nav-container nav {
   display: grid;
   background-color: var(--gryzzl-sky);
@@ -18,15 +68,57 @@
   gap: 24px;
   list-style: none;
   padding: 12px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: lowercase;
   justify-self: end;
 }
 
 .nav__link a {
-  color: var(--gryzzl-berry);
+  color: var(--gryzzl-primary-milk-choc);
   text-decoration: none;
+  text-transform: uppercase;
+}
+.nav__link a:hover {
+  color: var(--gryzzl-primary-dove);
+  cursor: pointer;
+}
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  margin-top: 8px;
+  display: none;
+  list-style-type: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: 500ms;
+  position: absolute;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+body {
+  background-color: var(--gryzzl-primary-mint);
+  font-family: "Beba Neue", sans-serif;
+}
+
+.main__heading {
+  display: grid;
+}
+
+.main__heading-name,
+.main__heading-tagline {
+  padding-inline: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
