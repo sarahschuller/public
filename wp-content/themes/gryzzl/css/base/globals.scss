@@ -16,20 +16,37 @@
 
 body {
   background-color: var(--gryzzl-primary-mint);
-  font-family: "Beba Neue", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: 6rem;
-  font-weight: 700;
   color: var(--gryzzl-primary-beige);
-  text-transform: uppercase;
 }
 
 h2 {
   font-size: 4.5rem;
-  font-weight: 700;
   color: var(--gryzzl-primary-dove);
+}
+
+h3 {
+  font-size: 3rem;
+  color: var(--gryzzl-primary-milk-choc);
+}
+
+h4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--gryzzl-primary-dk-choc);
   text-transform: uppercase;
 }
 
@@ -53,6 +70,22 @@ a {
       transition: 500ms ease;
       animation: slide 300ms;
     }
+  }
+}
+
+button {
+  background-color: var(--gryzzl-primary-beige);
+  color: var(--gryzzl-primary-dk-choc);
+  padding: 12px 24px;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 500ms ease;
+
+  &:hover {
+    background-color: var(--gryzzl-primary-dove);
+    color: var(--gryzzl-primary-mint);
   }
 }
 
