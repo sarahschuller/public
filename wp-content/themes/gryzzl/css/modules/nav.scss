@@ -9,13 +9,42 @@
   gap: 24px;
   list-style: none;
   padding: 12px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   text-transform: lowercase;
   justify-self: end;
 }
 
 .nav__link a {
-  color: var(--gryzzl-berry);
+  color: var(--gryzzl-primary-milk-choc);
   text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: var(--gryzzl-primary-dove);
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  margin-top: 8px;
+  display: none;
+  list-style-type: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: 500ms;
+  position: absolute;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
 }
