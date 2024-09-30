@@ -63,16 +63,6 @@ a:hover {
   color: var(--gryzzl-primary-dove);
   transition: 500ms ease;
 }
-a:hover:after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--gryzzl-primary-beige);
-  transition: 500ms ease;
-  animation: slide 300ms;
-}
 
 button {
   background-color: var(--gryzzl-primary-beige);
@@ -89,32 +79,11 @@ button:hover {
   color: var(--gryzzl-primary-mint);
 }
 
-footer {
-  background-color: var(--gryzzl-primary-milk-choc);
-  color: var(--gryzzl-primary-cream);
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.25rem;
-  padding: 24px;
-  border-top-right-radius: 50px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  margin-top: 24px;
-}
-
 .single-page {
   margin-top: 48px;
   padding: 24px;
 }
 
-@keyframes slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
 .header__nav-container nav {
   display: grid;
   background-color: var(--gryzzl-sky);
@@ -142,6 +111,17 @@ footer {
 .nav__link a:hover {
   color: var(--gryzzl-primary-dove);
   cursor: pointer;
+  animation: slide 300ms;
+}
+.nav__link a:hover:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: var(--gryzzl-primary-beige);
+  transition: 500ms ease;
+  animation: slide 300ms;
 }
 
 .dropdown {
@@ -172,6 +152,14 @@ ul li ul li {
   width: 100%;
 }
 
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .main__heading {
   display: grid;
 }
@@ -187,11 +175,28 @@ footer {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.25rem;
   padding: 24px;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 150px;
   position: absolute;
   bottom: 0;
   width: 100%;
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__inner a {
+  animation: none;
+}
+
+.footer__inner svg {
+  width: 24px;
+  fill: var(--gryzzl-primary-cream);
+  margin-top: 12px;
+  margin-right: 4px;
+}
+.footer__inner svg:hover {
+  fill: var(--gryzzl-primary-dove);
+  transition: 500ms ease;
 }
 
 /*# sourceMappingURL=style.css.map */
