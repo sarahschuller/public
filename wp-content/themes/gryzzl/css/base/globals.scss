@@ -63,17 +63,6 @@ a {
   &:hover {
     color: var(--gryzzl-primary-dove);
     transition: 500ms ease;
-
-    &:after {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 3px;
-      width: 100%;
-      background-color: var(--gryzzl-primary-beige);
-      transition: 500ms ease;
-      animation: slide 300ms;
-    }
   }
 }
 
@@ -96,13 +85,4 @@ button {
 .single-page {
   margin-top: 48px;
   padding: 24px;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
 }
