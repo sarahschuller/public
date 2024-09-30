@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+
 :root {
   --gryzzl-primary-beige: hsl(0, 10%, 66%);
   --gryzzl-primary-dove: hsl(242, 19%, 63%);
@@ -16,8 +18,9 @@
 
 body {
   background-color: var(--gryzzl-primary-mint);
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
 }
 
 h1,
@@ -26,6 +29,7 @@ h3,
 h4 {
   font-weight: 700;
   text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 h1 {
