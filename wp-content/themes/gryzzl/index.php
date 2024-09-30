@@ -10,3 +10,7 @@ get_header();
         <h2>A simple starter theme</h2>
     </div>
 </section>
+
+<?php
+get_footer();
+?>
