@@ -1,6 +1,7 @@
-<h3>gryzzl footer</h3>
-
-<?php wp_footer(); ?>
+<footer>
+    <span>&copy; 2024 Sarah Schuller</span>
+    <?php wp_footer(); ?>
+</footer>
 </body>
 
 </html>
